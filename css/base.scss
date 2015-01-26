@@ -1,0 +1,58 @@
+$header-nav-color: #C9313D;
+$photo-background-color: #343642;
+$accent-color: #FEE169;
+$background-color: #261F27;
+$bright-accent-color: #CDD452;
+$secondary-accent-color: #348899;
+$font-family: Tahoma, Verdana, Segoe, sans-serif;
+
+body {
+  background: $background-color;
+  margin: 0;
+  padding: 0;
+  font-family: $font-family;
+}
+
+header {
+  background: $header-nav-color;
+  height: 75px;
+  width: 100%;
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: $accent-color;
+  font-size: 50px;
+  text-align: center;
+  margin: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+article {
+  width: 30%;
+  display: inline-block;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  margin-left: 2.3%;
+}
+
+p {
+  color: $accent-color;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+}
+
+img {
+  width: 90%;
+  margin-left: 5%;
+}
+
+h2 {
+  color: $header-nav-color;
+  font-size: 32px;
+  text-align: center;
+}
