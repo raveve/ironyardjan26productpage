@@ -53,13 +53,12 @@ var productHome =  {
     var image = $(this).closest('article').find('img').attr('src');
     var price = $(this).closest('article').find('h3').text();
 
-    $(this).closest('article').replaceWith (
-      '<article>' +
-      '<form>' +
-      '<h2>Edit Item</h2>' +
-      '<p><label for="item">Item Name</label> ' +
-      '<input type="text" value="' + item + '" ></p>'
-      +
+    $(this).closest('article').replaceWith(
+        '<article>'
+      + '<form>'
+      + '<h2>Edit Item</h2>'
+      + '<p><label for="item">Item Name</label> '
+      + '<input type="text" value="' + item + '" ></p>'
       + '<p>' + '<label for="image">' + "Image" + '</label>' + ' '
       + '<input type="text" value="' + image + '" >'  + '</p>'
       + '<p>' + '<label for="details">' + "Details" + '</label>' + ' '
@@ -68,13 +67,13 @@ var productHome =  {
       + '<input type="text" value=' + price + ' >' + '</p>'
       + '<p>' + '<button class="save-edit-button">' + "Update Product"
       + '</button>' + '</p>'
-      + '</form>' +
-      '<article>'
+      + '</form>'
+      + '<article>'
     );
 
-    products.splice(itemIndex, 1, editItem);
+    // products.splice(itemIndex, 1, editItem);
 
-    productPage.renderAllItems(products);
+    // productPage.renderAllItems(products);
   },
 
 // Removing the item's object from the array upon deletion

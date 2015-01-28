@@ -19,7 +19,7 @@ var products = [
 },
 {
   item: "Large Detailed and Shaped Sheet Cake",
-  details: "A large sheet cake that will feed 30-35 individuals. Cake will be docorated with precise detail. Many different shapes available.",
+  details: "A large sheet cake that will feed 30-35 individuals. Cake will be decorated with precise detail. Many different shapes available.",
   image: "images/whale.jpg",
   price: "$200"
 },
