@@ -56,3 +56,21 @@ h2 {
   font-size: 32px;
   text-align: center;
 }
+
+.hide {
+  display: none;
+}
+
+.new-button {
+  margin-left: 5%;
+}
+
+.new-item {
+  margin: 0;
+  margin-left: 5%;
+}
+
+button {
+  background-color: $accent-color;
+  color: $background-color;
+}

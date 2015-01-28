@@ -41,3 +41,17 @@ h2 {
   color: #C9313D;
   font-size: 32px;
   text-align: center; }
+
+.hide {
+  display: none; }
+
+.new-button {
+  margin-left: 5%; }
+
+.new-item {
+  margin: 0;
+  margin-left: 5%; }
+
+button {
+  background-color: #FEE169;
+  color: #261F27; }

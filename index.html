@@ -13,11 +13,43 @@
       <h1>Butter Stick Bakery</h1>
     </header>
 
+    <div class="new-button">
+      <button type="submit">Add New Items</button>
+    </div>
+
+    <article class="new-item hide">
+      <form action="">
+        <h2>Add New Cake Style</h2>
+        <p>  <label for="item">Item Name</label>
+          <input type="text" name="item" placeholder="Item Name">
+        </p>
+        <p>
+          <label for="image">Image</label>
+          <input type="text" name="image" placeholder="Image URL">
+        </p>
+        <p>
+          <label for="details">Details</label>
+          <textarea id="details" cols="30" rows="10" name="details" placeholder="Item details"></textarea>
+        </p>
+        <p>  <label for="price">Price</label>
+          <input type="text" name="price" placeholder="Price">
+        </p>
+        <p>
+          <button type="submit" class="submit-item-button hide">Submit Item</button>
+        </p>
+        <p>
+          <button type="submit" class="save-edit-button hide">Save Item Edit</button>
+        </p>
+      </form>
+    </article>
+    <div id="items-section"></div>
   </section>
-  
+
 
 <script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/underscore/underscore.js"></script>
 <script src="data.js"></script>
+<script src="newproduct.js"></script>
 <script src="main.js"></script>
 </body>
 
