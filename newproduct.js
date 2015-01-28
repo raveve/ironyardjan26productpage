@@ -11,6 +11,3 @@ template.post = [
   "</article>"
 
 ].join("");
-
-
-template.section = "<p><%= selftext %></p>";

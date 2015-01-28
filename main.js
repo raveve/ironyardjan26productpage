@@ -52,9 +52,10 @@ var productHome =  {
     var details = $(this).closest('article').find('p').text();
     var image = $(this).closest('article').find('img').attr('src');
     var price = $(this).closest('article').find('h3').text();
+    var itemIndex = $(this).closest('article').data('index');
 
     $(this).closest('article').replaceWith(
-        '<article>'
+        '<article data-index="' + itemIndex + '">'
       + '<form>'
       + '<h2>Edit Item</h2>'
       + '<p><label for="item">Item Name</label> '
@@ -71,9 +72,18 @@ var productHome =  {
       + '<article>'
     );
 
-    // products.splice(itemIndex, 1, editItem);
+  },
 
-    // productPage.renderAllItems(products);
+  renderUpdate: function(event){
+    event.prevenDefault();
+
+    $("#items-section").on('click', '.save-edit-button', productHome.updateItem);
+
+    item = $(this).closest('article input[name="item"]').val();
+
+    products.splice(itemIndex, 1, productHome.updateItem);
+    productHome.renderAllItems(products);
+
   },
 
 // Removing the item's object from the array upon deletion
