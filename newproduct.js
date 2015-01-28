@@ -6,8 +6,8 @@ template.post = [
   "<img src=<%= image %>>",
   "<p><%= details %></p>",
   "<h3><%= price %></h3>",
-  "<p><button class='delete-item'>Delete</button></p>",
-  "<p><button class='edit-item'>Edit</button></p>",
+  "<h4><button class='delete-item'>Delete</button></h4>",
+  "<h4><button class='edit-item'>Edit</button></h4>",
   "</article>"
 
 ].join("");

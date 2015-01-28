@@ -16,7 +16,9 @@ var productHome =  {
       productHome.createItem();
     });
 
-    $('article').on('click', '.delete-item', productHome.deleteItem);
+    $("#items-section").on('click', '.edit-item', productHome.updateItem);
+
+    $("#items-section").on('click', '.delete-item', productHome.deleteItem);
   },
 
 // Allows the creation of a new item on the form
@@ -45,22 +47,31 @@ var productHome =  {
   updateItem: function(event) {
     event.preventDefault();
 
-    var item = $(this).closest('article').find('h2').text(),
-    var details = $(this).closest('article').find('p').text(),
-    var image = $(this).closest('article').find('img').attr('src'),
-    var price = $(this).closest('article').find('h3').text()
+    var item = $(this).closest('article').find('h2').text();
+    console.log(item);
+    var details = $(this).closest('article').find('p').text();
+    var image = $(this).closest('article').find('img').attr('src');
+    var price = $(this).closest('article').find('h3').text();
 
     $(this).closest('article').replaceWith (
+      '<article>' +
       '<form>' +
-      '<input type=text value=' + item + ' >'
-      + '<input type=url value=' + image + ' >'
-      + '<textarea name=>' + details + '</textarea>'
-      + '<input type=text value=' + price + ' >'
-      + '<button class="save-edit-button">' + "Update Product" + '</button>'
-      + '</form>'
+      '<h2>' + "Edit Item" + '</h2>' +
+      '<p>' + '<label for="item">' + "Item Name" + '</label>' + ' ' +
+      '<input type=text value=' + item + ' >' + '</p>' +
+      + '<p>' + '<label for="image">' + "Image" + '</label>' + ' '
+      + '<input type=url value=' + image + ' >'  + '</p>'
+      + '<p>' + '<label for="details">' + "Details" + '</label>' + ' '
+      + '<textarea name=>' + details + '</textarea>' + '</p>'
+      + '<p>' + '<label for="price">' + "Price" + '</label>' + ' '
+      + '<input type=text value=' + price + ' >' + '</p>'
+      + '<p>' + '<button class="save-edit-button">' + "Update Product"
+      + '</button>' + '</p>'
+      + '</form>' +
+      '<article>'
     );
 
-    products.splice(thisIndex, 1, editItem);
+    products.splice(itemIndex, 1, editItem);
 
     productPage.renderAllItems(products);
   },
@@ -104,16 +115,6 @@ $(document).ready(function() {
 
       $(".new-item").removeClass("hide");
       $(".submit-item-button").removeClass("hide");
-      $(".save-edit-button").addClass("hide");
-    });
-
-    // Edit button shows form upon click
-    $(".edit-item").click(function (event) {
-      event.preventDefault();
-
-      $(".new-item").removeClass("hide");
-      $(".save-edit-button").removeClass("hide");
-      $(".submit-item-button").addClass("hide");
     });
 
 });

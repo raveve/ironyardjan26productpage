@@ -47,6 +47,11 @@ h3 {
   font-size: 28px;
   text-align: center; }
 
+h4 {
+  color: #261F27;
+  padding: 10px;
+  margin: 0; }
+
 .hide {
   display: none; }
 
