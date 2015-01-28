@@ -1,13 +1,13 @@
 var products = [
 {
   item: "Small Decorated Cake",
-  details: "A small one teir cake that will feed 12-15 individuals. Cake will be decorated but with minimal detail. Shapes available are round or square.",
+  details: "A small one tier cake that will feed 12-15 individuals. Cake will be decorated but with minimal detail. Shapes available are round or square.",
   image: "images/bwbirdcake.jpg",
   price: "$75"
 },
 {
   item: "Medium Decorated Cake",
-  details: "A medium one teir cake that will feed 20-25 individuals. Cake will be decorated but with minimal detail. Shapes available are round or square.",
+  details: "A medium one tier cake that will feed 20-25 individuals. Cake will be decorated but with minimal detail. Shapes available are round or square.",
   image: "images/bigbang.jpg",
   price: "$100"
 },

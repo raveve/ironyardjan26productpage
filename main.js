@@ -56,15 +56,16 @@ var productHome =  {
     $(this).closest('article').replaceWith (
       '<article>' +
       '<form>' +
-      '<h2>' + "Edit Item" + '</h2>' +
-      '<p>' + '<label for="item">' + "Item Name" + '</label>' + ' ' +
-      '<input type=text value=' + item + ' >' + '</p>' +
+      '<h2>Edit Item</h2>' +
+      '<p><label for="item">Item Name</label> ' +
+      '<input type="text" value="' + item + '" ></p>'
+      +
       + '<p>' + '<label for="image">' + "Image" + '</label>' + ' '
-      + '<input type=url value=' + image + ' >'  + '</p>'
+      + '<input type="text" value="' + image + '" >'  + '</p>'
       + '<p>' + '<label for="details">' + "Details" + '</label>' + ' '
-      + '<textarea name=>' + details + '</textarea>' + '</p>'
+      + '<textarea name="">' + details + '</textarea>' + '</p>'
       + '<p>' + '<label for="price">' + "Price" + '</label>' + ' '
-      + '<input type=text value=' + price + ' >' + '</p>'
+      + '<input type="text" value=' + price + ' >' + '</p>'
       + '<p>' + '<button class="save-edit-button">' + "Update Product"
       + '</button>' + '</p>'
       + '</form>' +
