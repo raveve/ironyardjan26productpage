@@ -1,5 +1,6 @@
 var products = [
 {
+  
   item: "Small Decorated Cake",
   details: "A small one tier cake that will feed 12-15 individuals. Cake will be decorated but with minimal detail. Shapes available are round or square.",
   image: "images/bwbirdcake.jpg",

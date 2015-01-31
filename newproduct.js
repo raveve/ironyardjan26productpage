@@ -11,3 +11,22 @@ template.post = [
   "</article>"
 
 ].join("");
+
+template.edit = [
+  "<article>",
+  "<form id='updateForm'>",
+  "<h2>Edit Item</h2>",
+  "<input id='updateID' type='hidden' value='<%= idx %>'>",
+  "<p><label for='item'>Item Name </label>",
+  "<input id='updateTitle' type='text' value='<%= item %>'></p>",
+  "<p><label for='image'>Image </label>",
+  "<input id='updateImage' type='text' value='<%= image%>'</p>",
+  "<p><label for='details'>Details </label>",
+  "<textarea id='updateDetails' name=''><%= details%></textarea></p>",
+  "<p><label for='price'>Price </label>",
+  "<input id='updatePrice' type='text' value='<%= price %>'></p>",
+  "<p><button type='submit' class='save-edit-button'>Update Product</button></p>",
+  "</form>",
+  "<article>"
+
+].join("");
